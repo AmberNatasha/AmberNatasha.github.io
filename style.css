@@ -168,33 +168,64 @@ font-style:italic;
 font-size:18px;
 text-align:center;
 }  
-
 /* Teléfonos */
 
 @media (max-width: 768px){
 
 .card{
-width:95%;
-padding:25px;
+width:92%;
+padding:22px;
 }
 
 .projects{
-width:95%;
-padding:20px;
+width:92%;
+padding:22px;
 }
 
+.blog{
+width:92%;
+padding:22px;
+}
+
+.quote{
+width:92%;
+padding:22px;
+font-size:16px;
+}
+
+/* imagen perfil */
+
 .banner{
-height:220px;
+width:180px;
+height:180px;
+}
+
+/* tabla adaptable */
+
+.projects{
+overflow-x:auto;
 }
 
 table{
+min-width:500px;
 font-size:14px;
 }
 
+/* botones */
+
+button{
+padding:8px 12px;
+font-size:13px;
+}
+
+/* links */
+
 .links a{
 display:block;
-margin:10px auto;
-width:70%;
+width:80%;
+margin:8px auto;
+}
+
 }
   
 }
