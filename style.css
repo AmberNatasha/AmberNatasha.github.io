@@ -63,16 +63,6 @@ border-collapse:collapse;
 table-layout:fixed;
 }
 
-th{
-background:#ffe4f1;
-padding:12px;
-}
-
-td{
-padding:12px;
-border-bottom:1px solid #eee;
-}
-
 th, td{
 text-align:center;
 vertical-align:middle;
@@ -114,6 +104,17 @@ background:#fdfdfd;
 padding:10px;
 }
 
+/* burbujas */
+
+.bubble{
+position:fixed;
+bottom:-100px;
+background:rgba(255,255,255,0.35);
+border-radius:50%;
+pointer-events:none;
+backdrop-filter:blur(3px);
+}
+
 /* Teléfonos */
 
 @media (max-width: 768px){
@@ -142,16 +143,6 @@ margin:10px auto;
 width:70%;
 }
 
-/* burbujas */
-
-.bubble{
-position:fixed;
-bottom:-100px;
-background:rgba(255,255,255,0.35);
-border-radius:50%;
-pointer-events:none;
-backdrop-filter:blur(3px);
-}
   
   
 }
