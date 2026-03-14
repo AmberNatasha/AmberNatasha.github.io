@@ -1,12 +1,12 @@
 body{
-  font-family: 'Cormorant Garamond', serif;
+  font-family:'Cormorant Garamond', serif;
   background:linear-gradient(135deg,#0f1c16,#1a2e22,#243d2e);
   color:#e6efe8;
   margin:0;
   padding:0;
 }
 
-/* tarjetas principales */
+/* tarjetas */
 
 .card,
 .projects,
@@ -23,10 +23,10 @@ box-shadow:0 12px 40px rgba(0,0,0,0.6);
 border:1px solid rgba(120,170,130,0.15);
 }
 
-/* nombre */
+/* títulos */
 
 h1{
-  font-family: 'Cinzel', serif;
+  font-family:'Cinzel', serif;
   color:#9ed7a7;
   font-size:48px;
   letter-spacing:2px;
@@ -34,34 +34,34 @@ h1{
 }
 
 h2{
-  font-family: 'Cinzel', serif;
+  font-family:'Cinzel', serif;
   color:#b8e6c0;
-  letter-spacing:1px;
 }
 
-/* links */
+/* LINKS PRINCIPALES */
 
 .links a{
+  font-family:'Cinzel', serif;
   background:transparent;
   padding:10px 20px;
   margin:6px;
   border-radius:10px;
   text-decoration:none;
-  color:#9ed7a7; /* verde claro */
+  color:#9ed7a7;
   font-weight:600;
   transition:0.3s ease;
   border:1px solid rgba(158,215,167,0.3);
+  display:inline-block;
 }
 
 .links a:hover{
-  color:#ffd84a; /* amarillo luciérnaga */
+  color:#ffd84a;
   border-color:#ffd84a;
+  background:rgba(255,216,74,0.08);
   text-shadow:0 0 8px rgba(255,216,74,0.6);
-    background:rgba(255,216,74,0.08);
 }
 
-
-/* tabla */
+/* TABLA */
 
 table{
 width:100%;
@@ -79,29 +79,29 @@ border-bottom:1px solid rgba(255,255,255,0.08);
 text-align:center;
 }
 
-tbody tr:hover{
-background:rgba(120,200,150,0.08);
-}
-
-/* botones */
+/* BOTONES NUEVOS */
 
 button{
-background:#2e5b3f;
-border:none;
-padding:9px 15px;
-border-radius:8px;
-cursor:pointer;
-color:#e6efe8;
-font-weight:600;
-transition:0.25s;
+  font-family:'Cinzel', serif;
+  background:#2e5b3f;
+  border:none;
+  padding:9px 15px;
+  border-radius:8px;
+  cursor:pointer;
+  color:#e6efe8;
+  font-weight:600;
+  transition:0.3s ease;
 }
+
+/* TURQUESA MUSGO */
 
 button:hover{
-background:#4d8a62;
-transform:translateY(-2px);
+  background:#2c8c7a; /* turquesa musgo */
+  transform:translateY(-2px);
+  box-shadow:0 0 12px rgba(44,140,122,0.5);
 }
 
-/* avatar */
+/* banner */
 
 .banner{
 width:260px;
@@ -113,14 +113,7 @@ border-radius:14px;
 box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
 
-/* mini blog */
-
-.blog{
-font-size:17px;
-line-height:1.7;
-}
-
-/* frase */
+/* quote */
 
 .quote{
 font-style:italic;
@@ -136,24 +129,20 @@ margin-top:40px;
 color:#9fb7a6;
 }
 
-/* burbujas tipo luciérnagas */
+/* luciérnagas */
 
 .bubble{
 position:fixed;
 bottom:-100px;
-
 width:2px;
 height:2px;
-
 background:#ffd84a;
 border-radius:50%;
 pointer-events:none;
-
 box-shadow:
 0 0 6px rgba(255,220,100,0.9),
 0 0 12px rgba(255,220,100,0.6),
 0 0 18px rgba(255,220,100,0.4);
-
 animation:firefly 3s infinite ease-in-out;
 }
 
@@ -163,7 +152,7 @@ animation:firefly 3s infinite ease-in-out;
 100%{opacity:0.3; transform:scale(0.9);}
 }
 
-/* móviles */
+/* móvil */
 
 @media (max-width:768px){
 
@@ -184,14 +173,6 @@ height:200px;
 display:block;
 width:80%;
 margin:8px auto;
-}
-
-.projects{
-overflow-x:auto;
-}
-
-table{
-min-width:500px;
 }
 
 }
