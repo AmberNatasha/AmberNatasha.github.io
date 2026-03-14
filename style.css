@@ -144,8 +144,8 @@ background:rgba(173,216,230,0.45);
 border-radius:50%;
 pointer-events:none;
 backdrop-filter:blur(3px);
+border:1px solid rgba(255,255,255,0.6);
 }
-
 
 .blog{
 width:85%;
