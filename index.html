@@ -7,9 +7,7 @@
 
   <title>Amber Natasha BA | Web Developer</title>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 
@@ -19,6 +17,7 @@
 
 <body>
 
+  <!-- HEADER -->
   <header class="card">
 
     <img src="DigitalAvatar.png" alt="Avatar Amber" class="banner">
@@ -28,12 +27,17 @@
 
     <div class="links">
 
-      <a href="https://github.com/AmberNatasha" target="_blank" rel="noopener noreferrer" class="gold-link">
+      <a href="https://github.com/AmberNatasha"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="gold-link">
         GitHub
       </a>
 
-      <a href="https://www.linkedin.com/in/amber-bustos-038a94242" target="_blank" rel="noopener noreferrer"
-        class="gold-link">
+      <a href="https://www.linkedin.com/in/amber-bustos-038a94242"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="gold-link">
         LinkedIn
       </a>
 
@@ -42,6 +46,7 @@
   </header>
 
 
+  <!-- PROYECTOS -->
   <section class="projects">
 
     <h2>My Projects</h2>
@@ -63,12 +68,15 @@
           <td>Services Manager</td>
           <td>.NET, SQL</td>
           <td>
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="gold-link">
+            <a href="https://example.com"
+               target="_blank"
+               class="btn-link">
               Repository
             </a>
           </td>
           <td>
-            <button type="button" class="preview-btn">
+            <button class="preview-btn"
+                    data-image="projects/services-manager.png">
               Preview
             </button>
           </td>
@@ -78,12 +86,15 @@
           <td>Hotel Reserve System</td>
           <td>ASP.NET Core</td>
           <td>
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="gold-link">
+            <a href="https://example.com"
+               target="_blank"
+               class="btn-link">
               Repository
             </a>
           </td>
           <td>
-            <button type="button" class="preview-btn">
+            <button class="preview-btn"
+                    data-image="projects/hotel-reserve.png">
               Preview
             </button>
           </td>
@@ -93,12 +104,15 @@
           <td>ToDo Tasker Tool</td>
           <td>JavaScript</td>
           <td>
-            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="gold-link">
+            <a href="https://example.com"
+               target="_blank"
+               class="btn-link">
               Repository
             </a>
           </td>
           <td>
-            <button type="button" class="preview-btn">
+            <button class="preview-btn"
+                    data-image="projects/todo.png">
               Preview
             </button>
           </td>
@@ -111,6 +125,7 @@
   </section>
 
 
+  <!-- QUOTE -->
   <section class="quote card">
     <p>
       “La persistencia vence al talento cuando el talento no persiste.”
@@ -118,33 +133,55 @@
   </section>
 
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2026 Amber Bustos Araya - Developer Portfolio</p>
   </footer>
 
 
+  <!-- MODAL PARA PREVIEW -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img id="modalImage" alt="Project Preview">
+  </div>
+
+
+  <!-- SCRIPTS -->
   <script>
-    $(document).ready(function () {
 
-      function createBubble() {
-        let bubble = $('<div class="bubble"></div>');
-        $('body').append(bubble);
+    // Efecto luciérnagas
+    function createBubble() {
+      let bubble = $('<div class="bubble"></div>');
+      $('body').append(bubble);
 
-        bubble.css({
-          left: Math.random() * window.innerWidth
-        });
+      bubble.css({
+        left: Math.random() * window.innerWidth
+      });
 
-        bubble.animate({
-          bottom: '100%',
-          opacity: 0
-        }, 8000, function () {
-          $(this).remove();
-        });
-      }
+      bubble.animate({
+        bottom: '100%',
+        opacity: 0
+      }, 8000, function () {
+        $(this).remove();
+      });
+    }
 
-      setInterval(createBubble, 800);
+    setInterval(createBubble, 800);
+
+
+    // Preview modal
+    $(document).on("click", ".preview-btn", function () {
+
+      let imageSrc = $(this).data("image");
+      $("#modalImage").attr("src", imageSrc);
+      $("#imageModal").fadeIn();
 
     });
+
+    $(".close, #imageModal").on("click", function () {
+      $("#imageModal").fadeOut();
+    });
+
   </script>
 
 </body>
