@@ -2,162 +2,151 @@
 <html lang="es">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Amber Natasha BA | Web Developer</title>
+  <title>Amber Natasha BA | Web Developer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;600&display=swap"
+    rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 </head>
 
 <body>
 
-<header class="card">
+  <header class="card">
 
-<img src="DigitalAvatar.png" alt="Avatar Amber" class="banner">
+    <img src="DigitalAvatar.png" alt="Avatar Amber" class="banner">
 
-<h1>Amber Bustos Araya</h1>
-<p>Full Stack Web Developer (.NET)</p>
+    <h1>Amber Bustos Araya</h1>
+    <p>Full Stack Web Developer (.NET)</p>
 
-<div class="links">
+    <div class="links">
 
-<a href="https://github.com/AmberNatasha"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="gold-link">
-   GitHub
-</a>
+      <a href="https://github.com/AmberNatasha" target="_blank" rel="noopener noreferrer" class="gold-link">
+        GitHub
+      </a>
 
-<a href="https://www.linkedin.com/in/amber-bustos-038a94242"
-   target="_blank"
-   rel="noopener noreferrer"
-   class="gold-link">
-   LinkedIn
-</a>
+      <a href="https://www.linkedin.com/in/amber-bustos-038a94242" target="_blank" rel="noopener noreferrer"
+        class="gold-link">
+        LinkedIn
+      </a>
 
-</div>
+    </div>
 
-</header>
+  </header>
 
 
-<section class="projects">
+  <section class="projects">
 
-<h2>My Projects</h2>
+    <h2>My Projects</h2>
 
-<table>
+    <table>
 
-<thead>
-<tr>
-<th>Project</th>
-<th>Technology</th>
-<th>Repository</th>
-<th>Preview</th>
-</tr>
-</thead>
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Technology</th>
+          <th>Repository</th>
+          <th>Preview</th>
+        </tr>
+      </thead>
 
-<tbody>
+      <tbody>
 
-<tr>
-  <td>Services Manager</td>
-  <td>.NET, SQL</td>
-  <td>
-    <a href="https://example.com"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="btn-link">
-       Repository
-    </a>
-  </td>
-  <td>
-    <button type="button" class="preview-btn">
-      Preview
-    </button>
-  </td>
-</tr>
+        <tr>
+          <td>Services Manager</td>
+          <td>.NET, SQL</td>
+          <td>
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="gold-link">
+              Repository
+            </a>
+          </td>
+          <td>
+            <button type="button" class="preview-btn">
+              Preview
+            </button>
+          </td>
+        </tr>
 
-<tr>
-  <td>Hotel Reserve System</td>
-  <td>ASP.NET Core</td>
-  <td>
-    <a href="https://example.com"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="btn-link">
-       Repository
-    </a>
-  </td>
-  <td>
-    <button type="button" class="preview-btn">
-      Preview
-    </button>
-  </td>
-</tr>
+        <tr>
+          <td>Hotel Reserve System</td>
+          <td>ASP.NET Core</td>
+          <td>
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="gold-link">
+              Repository
+            </a>
+          </td>
+          <td>
+            <button type="button" class="preview-btn">
+              Preview
+            </button>
+          </td>
+        </tr>
 
-<tr>
-  <td>ToDo Tasker Tool</td>
-  <td>JavaScript</td>
-  <td>
-    <a href="https://example.com"
-       target="_blank"
-       rel="noopener noreferrer"
-       class="btn-link">
-       Repository
-    </a>
-  </td>
-  <td>
-    <button type="button" class="preview-btn">
-      Preview
-    </button>
-  </td>
-</tr>
+        <tr>
+          <td>ToDo Tasker Tool</td>
+          <td>JavaScript</td>
+          <td>
+            <a href="https://example.com" target="_blank" rel="noopener noreferrer" class="gold-link">
+              Repository
+            </a>
+          </td>
+          <td>
+            <button type="button" class="preview-btn">
+              Preview
+            </button>
+          </td>
+        </tr>
 
-</tbody>
+      </tbody>
 
-</table>
+    </table>
 
-</section>
+  </section>
 
 
-<section class="quote card">
-<p>
-“La persistencia vence al talento cuando el talento no persiste.”
-</p>
-</section>
+  <section class="quote card">
+    <p>
+      “La persistencia vence al talento cuando el talento no persiste.”
+    </p>
+  </section>
 
 
-<footer>
-<p>© 2026 Amber Bustos Araya - Developer Portfolio</p>
-</footer>
+  <footer>
+    <p>© 2026 Amber Bustos Araya - Developer Portfolio</p>
+  </footer>
 
 
-<script>
-$(document).ready(function(){
+  <script>
+    $(document).ready(function () {
 
-function createBubble(){
-  let bubble = $('<div class="bubble"></div>');
-  $('body').append(bubble);
+      function createBubble() {
+        let bubble = $('<div class="bubble"></div>');
+        $('body').append(bubble);
 
-  bubble.css({
-    left:Math.random()*window.innerWidth
-  });
+        bubble.css({
+          left: Math.random() * window.innerWidth
+        });
 
-  bubble.animate({
-    bottom:'100%',
-    opacity:0
-  },8000,function(){
-    $(this).remove();
-  });
-}
+        bubble.animate({
+          bottom: '100%',
+          opacity: 0
+        }, 8000, function () {
+          $(this).remove();
+        });
+      }
 
-setInterval(createBubble,800);
+      setInterval(createBubble, 800);
 
-});
-</script>
+    });
+  </script>
 
 </body>
+
 </html>
