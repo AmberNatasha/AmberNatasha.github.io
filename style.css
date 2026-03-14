@@ -60,6 +60,7 @@ box-shadow:0 10px 30px rgba(0,0,0,0.08);
 table{
 width:100%;
 border-collapse:collapse;
+table-layout:fixed;
 }
 
 th{
@@ -70,6 +71,11 @@ padding:12px;
 td{
 padding:12px;
 border-bottom:1px solid #eee;
+}
+
+th, td{
+text-align:center;
+vertical-align:middle;
 }
 
 /* botones */
