@@ -104,3 +104,33 @@ display:block;
 border-radius:20px;
 margin-bottom:20px;
 }
+
+Teléfonos 
+
+@media (max-width: 768px){
+
+.card{
+width:95%;
+padding:25px;
+}
+
+.projects{
+width:95%;
+padding:20px;
+}
+
+.banner{
+height:220px;
+}
+
+table{
+font-size:14px;
+}
+
+.links a{
+display:block;
+margin:10px auto;
+width:70%;
+}
+
+}
