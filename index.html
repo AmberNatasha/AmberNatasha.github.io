@@ -22,7 +22,6 @@
 <img src="DigitalAvatar.png" alt="Avatar Amber" class="banner">
 
 <h1>Amber Bustos Araya</h1>
-
 <p>Full Stack Web Developer (.NET)</p>
 
 <div class="links">
@@ -30,14 +29,14 @@
 <a href="https://github.com/AmberNatasha"
    target="_blank"
    rel="noopener noreferrer"
-   class="btn-link">
+   class="gold-link">
    GitHub
 </a>
 
 <a href="https://www.linkedin.com/in/amber-bustos-038a94242"
    target="_blank"
    rel="noopener noreferrer"
-   class="btn-link">
+   class="gold-link">
    LinkedIn
 </a>
 
@@ -75,7 +74,9 @@
     </a>
   </td>
   <td>
-    <button type="button">Preview</button>
+    <button type="button" class="preview-btn">
+      Preview
+    </button>
   </td>
 </tr>
 
@@ -91,7 +92,9 @@
     </a>
   </td>
   <td>
-    <button type="button">Preview</button>
+    <button type="button" class="preview-btn">
+      Preview
+    </button>
   </td>
 </tr>
 
@@ -107,7 +110,9 @@
     </a>
   </td>
   <td>
-    <button type="button">Preview</button>
+    <button type="button" class="preview-btn">
+      Preview
+    </button>
   </td>
 </tr>
 
@@ -119,11 +124,9 @@
 
 
 <section class="quote card">
-
 <p>
 “La persistencia vence al talento cuando el talento no persiste.”
 </p>
-
 </section>
 
 
@@ -136,21 +139,19 @@
 $(document).ready(function(){
 
 function createBubble(){
+  let bubble = $('<div class="bubble"></div>');
+  $('body').append(bubble);
 
-let bubble = $('<div class="bubble"></div>');
-$('body').append(bubble);
+  bubble.css({
+    left:Math.random()*window.innerWidth
+  });
 
-bubble.css({
-left:Math.random()*window.innerWidth
-});
-
-bubble.animate({
-bottom:'100%',
-opacity:0
-},8000,function(){
-$(this).remove();
-});
-
+  bubble.animate({
+    bottom:'100%',
+    opacity:0
+  },8000,function(){
+    $(this).remove();
+  });
 }
 
 setInterval(createBubble,800);

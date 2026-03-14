@@ -38,30 +38,69 @@ h2{
   color:#b8e6c0;
 }
 
-/* BOTONES / LINKS UNIFICADOS */
+/* 🔶 BOTONES DORADOS (GitHub / LinkedIn) */
+
+.gold-link{
+  font-family:'Cinzel', serif;
+  background:transparent;
+  padding:10px 20px;
+  margin:6px;
+  border-radius:10px;
+  text-decoration:none;
+  color:#ffd84a;
+  font-weight:600;
+  display:inline-block;
+  border:1px solid rgba(255,216,74,0.4);
+  transition:0.3s ease;
+}
+
+.gold-link:hover{
+  background:rgba(255,216,74,0.12);
+  box-shadow:0 0 12px rgba(255,216,74,0.6);
+  transform:translateY(-2px);
+}
+
+/* 🔗 BOTONES REPOSITORY */
 
 .btn-link{
   font-family:'Cinzel', serif;
   background:#2e5b3f;
   padding:9px 15px;
-  margin:6px;
   border-radius:8px;
   text-decoration:none;
   color:#e6efe8;
   font-weight:600;
   display:inline-block;
   transition:0.3s ease;
-  border:none;
-  cursor:pointer;
 }
 
 .btn-link:hover{
-  background:#2c8c7a; /* turquesa musgo */
+  background:#2c8c7a;
   transform:translateY(-2px);
   box-shadow:0 0 12px rgba(44,140,122,0.5);
 }
 
-/* TABLA */
+/* 🎬 BOTÓN PREVIEW */
+
+.preview-btn{
+  font-family:'Cinzel', serif;
+  background:#2e5b3f;
+  border:none;
+  padding:9px 15px;
+  border-radius:8px;
+  cursor:pointer;
+  color:#e6efe8;
+  font-weight:600;
+  transition:0.3s ease;
+}
+
+.preview-btn:hover{
+  background:#2c8c7a;
+  transform:translateY(-2px);
+  box-shadow:0 0 12px rgba(44,140,122,0.5);
+}
+
+/* tabla */
 
 table{
   width:100%;
@@ -77,26 +116,6 @@ th,td{
   padding:14px;
   border-bottom:1px solid rgba(255,255,255,0.08);
   text-align:center;
-}
-
-/* BOTONES NORMALES (Preview) */
-
-button{
-  font-family:'Cinzel', serif;
-  background:#2e5b3f;
-  border:none;
-  padding:9px 15px;
-  border-radius:8px;
-  cursor:pointer;
-  color:#e6efe8;
-  font-weight:600;
-  transition:0.3s ease;
-}
-
-button:hover{
-  background:#2c8c7a;
-  transform:translateY(-2px);
-  box-shadow:0 0 12px rgba(44,140,122,0.5);
 }
 
 /* banner */
@@ -167,9 +186,10 @@ footer{
     height:200px;
   }
 
-  .btn-link{
+  .gold-link{
     display:block;
     width:80%;
     margin:8px auto;
   }
+
 }
