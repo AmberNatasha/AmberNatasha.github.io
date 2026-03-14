@@ -1,189 +1,116 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Full Stack Developer</title>
 
-  <title>Amber Natasha BA | Web Developer</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header class="card">
-
-    <img src="DigitalAvatar.png" alt="Avatar Amber" class="banner">
-
-    <h1>Amber Bustos Araya</h1>
-    <p>Full Stack Web Developer (.NET)</p>
-
-    <div class="links">
-
-      <a href="https://github.com/AmberNatasha"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="gold-link">
-        GitHub
-      </a>
-
-      <a href="https://www.linkedin.com/in/amber-bustos-038a94242"
-         target="_blank"
-         rel="noopener noreferrer"
-         class="gold-link">
-        LinkedIn
-      </a>
-
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Your Name</h1>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-
   </header>
 
-
-  <!-- PROYECTOS -->
-  <section class="projects">
-
-    <h2>My Projects</h2>
-
-    <table>
-
-      <thead>
-        <tr>
-          <th>Project</th>
-          <th>Technology</th>
-          <th>Repository</th>
-          <th>Preview</th>
-        </tr>
-      </thead>
-
-      <tbody>
-
-        <tr>
-          <td>Services Manager</td>
-          <td>.NET, SQL</td>
-          <td>
-            <a href="https://example.com"
-               target="_blank"
-               class="btn-link">
-              Repository
-            </a>
-          </td>
-          <td>
-            <button class="preview-btn"
-                    data-image="projects/services-manager.png">
-              Preview
-            </button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>Hotel Reserve System</td>
-          <td>ASP.NET Core</td>
-          <td>
-            <a href="https://example.com"
-               target="_blank"
-               class="btn-link">
-              Repository
-            </a>
-          </td>
-          <td>
-            <button class="preview-btn"
-                    data-image="projects/hotel-reserve.png">
-              Preview
-            </button>
-          </td>
-        </tr>
-
-        <tr>
-          <td>ToDo Tasker Tool</td>
-          <td>JavaScript</td>
-          <td>
-            <a href="https://example.com"
-               target="_blank"
-               class="btn-link">
-              Repository
-            </a>
-          </td>
-          <td>
-            <button class="preview-btn"
-                    data-image="projects/todo.png">
-              Preview
-            </button>
-          </td>
-        </tr>
-
-      </tbody>
-
-    </table>
-
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>Full Stack Developer</h2>
+      <p>Engineering student focused on building clean, scalable, and efficient technology solutions.</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
   </section>
 
-
-  <!-- QUOTE -->
-  <section class="quote card">
-    <p>
-      “La persistencia vence al talento cuando el talento no persiste.”
-    </p>
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        Advanced Computer Engineering student with experience in finance operations,
+        administrative support, and multinational environments. I combine technical
+        foundations with strong communication and problem-solving skills to bridge
+        business needs with technology-driven solutions.
+      </p>
+      <p>
+        Passionate about backend development, databases, system architecture, and
+        continuous learning. I thrive in dynamic environments and focus on delivering
+        structured, efficient, and scalable systems.
+      </p>
+    </div>
   </section>
 
+  <!-- Skills -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2>Technical Skills</h2>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 Amber Bustos Araya - Developer Portfolio</p>
+      <div class="skills-grid">
+        <div class="skill-card">.NET</div>
+        <div class="skill-card">Java</div>
+        <div class="skill-card">Spring Boot</div>
+        <div class="skill-card">PHP</div>
+        <div class="skill-card">SQL Server</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">MongoDB</div>
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Bootstrap</div>
+        <div class="skill-card">REST APIs</div>
+        <div class="skill-card">CI/CD</div>
+        <div class="skill-card">Selenium</div>
+        <div class="skill-card">Responsive Design</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <h3>Project One</h3>
+          <p>Short description of your system, architecture, and technologies used.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Project Two</h3>
+          <p>Explain functionality, backend logic, database design, etc.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: your@email.com</p>
+      <p>LinkedIn: your profile link</p>
+      <p>GitHub: your repository link</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Your Name. All rights reserved.</p>
   </footer>
 
-
-  <!-- MODAL PARA PREVIEW -->
-  <div id="imageModal" class="modal">
-    <span class="close">&times;</span>
-    <img id="modalImage" alt="Project Preview">
-  </div>
-
-
-  <!-- SCRIPTS -->
-  <script>
-
-    // Efecto luciérnagas
-    function createBubble() {
-      let bubble = $('<div class="bubble"></div>');
-      $('body').append(bubble);
-
-      bubble.css({
-        left: Math.random() * window.innerWidth
-      });
-
-      bubble.animate({
-        bottom: '100%',
-        opacity: 0
-      }, 8000, function () {
-        $(this).remove();
-      });
-    }
-
-    setInterval(createBubble, 800);
-
-
-    // Preview modal
-    $(document).on("click", ".preview-btn", function () {
-
-      let imageSrc = $(this).data("image");
-      $("#modalImage").attr("src", imageSrc);
-      $("#imageModal").fadeIn();
-
-    });
-
-    $(".close, #imageModal").on("click", function () {
-      $("#imageModal").fadeOut();
-    });
-
-  </script>
-
 </body>
-
 </html>
