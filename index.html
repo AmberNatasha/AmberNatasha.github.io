@@ -5,23 +5,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title> Amber Natasha BA | Web Developer </title>
+<title>Amber Natasha BA | Web Developer</title>
 
 <link rel="stylesheet" href="style.css">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
 </head>
 
 <body>
 
 <header class="card">
+
 <img src="DigitalAvatar.png" alt="Avatar Amber" class="banner">
+
 <h1>Amber</h1>
-<p>Full Stack Web Developer (.NET)</p>
-<p></p>
+
+<p>Full Stack Web Developer (.NET) </p>
 
 <div class="links">
 <a href="https://github.com/AmberNatasha" target="_blank">GitHub</a>
-<a href="https://www.linkedin.com/in/amber-bustos-038a94242?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a>
+<a href="https://www.linkedin.com/in/amber-bustos-038a94242">LinkedIn</a>
 </div>
 
 </header>
@@ -73,10 +77,37 @@
 
 
 <footer>
-
 <p>© 2026 Amber Bustos Araya - Developer Portfolio</p>
-
 </footer>
+
+
+<script>
+
+function createBubble(){
+
+let bubble = $('<div class="bubble"></div>');
+$('body').append(bubble);
+
+let size = Math.random()*60+20;
+
+bubble.css({
+width:size,
+height:size,
+left:Math.random()*window.innerWidth
+});
+
+bubble.animate({
+bottom:'100%',
+opacity:0
+},8000,function(){
+$(this).remove();
+});
+
+}
+
+setInterval(createBubble,800);
+
+</script>
 
 </body>
 </html>
