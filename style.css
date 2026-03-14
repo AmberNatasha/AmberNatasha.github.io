@@ -57,7 +57,9 @@ h2{
   color:#ffd84a; /* amarillo luciérnaga */
   border-color:#ffd84a;
   text-shadow:0 0 8px rgba(255,216,74,0.6);
+    background:rgba(255,216,74,0.08);
 }
+
 
 /* tabla */
 
