@@ -40,14 +40,15 @@ h2{
 
 /* LINKS PRINCIPALES */
 
-.links a{
+.links a:link,
+.links a:visited{
   font-family:'Cinzel', serif;
   background:transparent;
   padding:10px 20px;
   margin:6px;
   border-radius:10px;
   text-decoration:none;
-  color:#9ed7a7;
+  color:#9ed7a7; /* verde claro */
   font-weight:600;
   transition:0.3s ease;
   border:1px solid rgba(158,215,167,0.3);
@@ -55,10 +56,14 @@ h2{
 }
 
 .links a:hover{
-  color:#ffd84a;
+  color:#ffd84a; /* amarillo */
   border-color:#ffd84a;
   background:rgba(255,216,74,0.08);
   text-shadow:0 0 8px rgba(255,216,74,0.6);
+}
+
+.links a:active{
+  color:#ffd84a;
 }
 
 /* TABLA */
