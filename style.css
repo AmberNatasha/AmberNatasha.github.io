@@ -140,7 +140,7 @@ padding:10px;
 .bubble{
 position:fixed;
 bottom:-100px;
-background:rgba(255,255,255,0.35);
+background:rgba(173,216,230,0.45);
 border-radius:50%;
 pointer-events:none;
 backdrop-filter:blur(3px);
