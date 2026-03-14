@@ -42,20 +42,21 @@ h2{
 /* links */
 
 .links a{
-background:#2e5b3f;
-padding:10px 20px;
-margin:6px;
-border-radius:10px;
-text-decoration:none;
-color:#e6efe8;
-font-weight:600;
-transition:0.3s;
-border:1px solid rgba(140,200,150,0.2);
+  background:transparent;
+  padding:10px 20px;
+  margin:6px;
+  border-radius:10px;
+  text-decoration:none;
+  color:#9ed7a7; /* verde claro */
+  font-weight:600;
+  transition:0.3s ease;
+  border:1px solid rgba(158,215,167,0.3);
 }
 
 .links a:hover{
-background:#3f7c55;
-transform:translateY(-2px);
+  color:#ffd84a; /* amarillo luciérnaga */
+  border-color:#ffd84a;
+  text-shadow:0 0 8px rgba(255,216,74,0.6);
 }
 
 /* tabla */
