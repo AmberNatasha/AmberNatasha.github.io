@@ -1,2 +1,9 @@
 # AmberNatasha.github.io
-My Web Developer Profesional Portafolio with my latest projects in my full stack .Net. 
+
+HTML → estructura
+
+CSS → diseño
+
+JavaScript → interactividad
+
+jQuery → librería para simplificar JavaScript
