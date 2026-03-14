@@ -8,7 +8,7 @@
 
 <title>Amber Natasha BA | Web Developer</title>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">lr
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
@@ -121,11 +121,7 @@ function createBubble(){
 let bubble = $('<div class="bubble"></div>');
 $('body').append(bubble);
 
-let size = Math.random()*60 + 20;
-
 bubble.css({
-width:size,
-height:size,
 left:Math.random()*window.innerWidth
 });
 
@@ -137,6 +133,8 @@ $(this).remove();
 });
 
 }
+
+setInterval(createBubble,800);
 
 setInterval(createBubble,800);
 

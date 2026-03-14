@@ -135,17 +135,19 @@ color:#9fb7a6;
 
 .bubble{
 position:fixed;
+bottom:-100px;
+
+width:2px;
+height:2px;
+
 background:#ffd84a;
 border-radius:50%;
 pointer-events:none;
 
-width:4px;
-height:4px;
-
 box-shadow:
-0 0 6px #ffd84a,
-0 0 12px #ffc400,
-0 0 20px rgba(255,200,0,0.7);
+0 0 6px rgba(255,220,100,0.9),
+0 0 12px rgba(255,220,100,0.6),
+0 0 18px rgba(255,220,100,0.4);
 
 animation:firefly 3s infinite ease-in-out;
 }
