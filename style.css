@@ -135,12 +135,25 @@ color:#9fb7a6;
 
 .bubble{
 position:fixed;
-bottom:-100px;
-background:rgba(140,220,160,0.25);
+background:#ffd84a;
 border-radius:50%;
 pointer-events:none;
-backdrop-filter:blur(2px);
-border:1px solid rgba(160,240,180,0.25);
+
+width:4px;
+height:4px;
+
+box-shadow:
+0 0 6px #ffd84a,
+0 0 12px #ffc400,
+0 0 20px rgba(255,200,0,0.7);
+
+animation:firefly 3s infinite ease-in-out;
+}
+
+@keyframes firefly{
+0%{opacity:0.2; transform:scale(0.8);}
+50%{opacity:1; transform:scale(1.2);}
+100%{opacity:0.3; transform:scale(0.9);}
 }
 
 /* móviles */
